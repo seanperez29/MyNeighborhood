@@ -54,7 +54,7 @@
                                 <rect key="frame" x="16" y="85" width="343" height="562"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="dI2-NC-fhI">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyHoodCell" rowHeight="100" id="dI2-NC-fhI">
                                         <rect key="frame" x="0.0" y="28" width="343" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dI2-NC-fhI" id="jIW-6C-5HA">
@@ -98,6 +98,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="qbe-ti-Q4p"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="feg-2V-Oxq"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -111,6 +115,9 @@
                             <constraint firstItem="b8X-YG-5XX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="sal-6B-T2W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="xmA-jX-qYe" id="shb-7J-RUL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
